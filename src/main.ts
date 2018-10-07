@@ -1,3 +1,9 @@
+interface MyTemplate {
+  element: string;
+  textContent: string;
+  children: object[];
+}
+
 const myConstants = (() => {
   'use strict';
   return {
@@ -9,7 +15,7 @@ const myConstants = (() => {
 
 const myLib = (() => {
   'use strict';
-  const getElement = (pojo) => {
+  const getElement = (pojo: MyTemplate): HTMLElement => {
     const rootElem = document.createElement(pojo.element);
     if (pojo.textContent) {
       rootElem.textContent = pojo.textContent;
@@ -17,7 +23,7 @@ const myLib = (() => {
     if (pojo.children) {
       const children = pojo.children;
       children.forEach((child) => {
-        rootElem.appendChild(getElement(child));
+        rootElem.appendChild(getElement(<MyTemplate>child));
       });
     }
     return rootElem;
