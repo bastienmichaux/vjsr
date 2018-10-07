@@ -1,0 +1,22 @@
+{
+  "name": "vjsr",
+  "version": "1.0.0",
+  "description": "vjsr",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastienmichaux/vjsr.git"
+  },
+  "author": "Bastien Michaux (https://bastienmichaux.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bastienmichaux/vjsr/issues"
+  },
+  "homepage": "https://github.com/bastienmichaux/vjsr#readme",
+  "devDependencies": {
+    "yarn": "^1.10.1"
+  }
+}

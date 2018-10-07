@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "build"
+  },
+  "include": ["src/*"]
+}
