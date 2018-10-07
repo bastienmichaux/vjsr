@@ -1,8 +1,4 @@
-interface MyTemplate {
-  element: string;
-  textContent: string;
-  children: object[];
-}
+import {MyTemplate} from 'my-template';
 
 const myConstants = (() => {
   'use strict';
