@@ -1,5 +1,5 @@
 export default interface MyTemplate {
   element: string;
-  textContent: string;
+  textContent?: string;
   children: object[];
 }
